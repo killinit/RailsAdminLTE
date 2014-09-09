@@ -18,9 +18,11 @@ gem 'sass-rails', '4.0.3'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.1.2'
-gem 'turbolinks', '1.1.1'
+gem 'jquery-turbolinks', '2.1.0'
+gem 'raphael-rails', '2.1.2'
+gem 'turbolinks', '2.3.0'
 gem 'jbuilder', '1.0.2'
-gem 'high_voltage', '~> 2.2.1'
+gem 'high_voltage', '2.2.1'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false

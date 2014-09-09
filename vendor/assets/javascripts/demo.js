@@ -1,4 +1,4 @@
-$(function() {
+$(window).bind('page:change', function() {
     /* For demo purposes */
     var demo = $("<div />").css({
         position: "fixed",
