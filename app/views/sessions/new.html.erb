@@ -6,6 +6,9 @@
             <%= form_for(:session, url: sessions_path) do |f| %>
             <!--<form action="../../index.html" method="post">-->
                 <div class="body bg-gray">
+                    <% flash.each do |key, value| %>
+                        <div class="alert alert-danger"><%= value %></div>
+                    <% end %>
                     <div class="form-group">
                         <!--<input type="text" name="userid" class="form-control" placeholder="User ID"/>-->
                         <%= f.text_field :email, class: "form-control", placeholder: "Email ID" %>

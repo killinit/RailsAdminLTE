@@ -1,10 +1,10 @@
 Adminlte::Application.routes.draw do
-  get "users/new"
+  resources :users
   match '/signup',  to: 'users#new',            via: 'get'
   resources :sessions, only: [:new, :create, :destroy]
   root "sessions#new"
-  get "sessions/create"
-  get "sessions/destroy"
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
+  match '/home', to: 'dashboard#home', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
