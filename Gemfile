@@ -22,6 +22,7 @@ gem 'raphael-rails', '2.1.2'
 gem 'turbolinks', '2.3.0'
 gem 'jbuilder', '1.0.2'
 gem 'high_voltage', '2.2.1'
+gem 'bcrypt-ruby', '3.1.2'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false

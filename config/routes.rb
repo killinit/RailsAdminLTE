@@ -1,4 +1,6 @@
 Adminlte::Application.routes.draw do
+  get "users/new"
+  match '/signup',  to: 'users#new',            via: 'get'
   resources :sessions, only: [:new, :create, :destroy]
   root "sessions#new"
   get "sessions/create"
