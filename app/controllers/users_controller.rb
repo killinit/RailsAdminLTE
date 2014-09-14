@@ -9,7 +9,6 @@ class UsersController < ApplicationController
   		@user = User.new(user_params)
   		if @user.save
   			sign_in @user
-  			flash[:success] = "Welcome to Dashboard!"
   			redirect_to home_path
   		else
   			render 'new'
