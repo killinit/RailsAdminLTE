@@ -29,7 +29,8 @@
                                         <li><!-- start message -->
                                             <a href="#">
                                                 <div class="pull-left">
-                                                    <img src="/assets/avatar3.png" class="img-circle" alt="User Image"/>
+                                                    <%= image_tag current_user.avatar.url, :class => "img-circle", :alt => "User Image" %>
+                                                    <!--<img src="/assets/avatar3.png" class="img-circle" alt="User Image"/>-->
                                                 </div>
                                                 <h4>
                                                     Support Team
@@ -212,7 +213,8 @@
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
-                                    <img src="/assets/avatar3.png" class="img-circle" alt="User Image" />
+                                    <%= image_tag current_user.avatar.url, :class => "img-circle", :alt => "User Image" %>
+                                    <!--<img src="/assets/avatar3.png" class="img-circle" alt="User Image" />-->
                                     <p>
                                         <%= current_user.name %> - Web Developer
                                         <small>Member since Nov. 2012</small>
